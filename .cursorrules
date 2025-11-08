@@ -10,8 +10,8 @@
 ## Development Workflow
 - **For complex/multi-step changes: share the plan first and wait for user approval before implementing**
 - **Before implementing any change: silently verify it complies with requirements, context, rules, and principles. Only speak up if there's a violation.**
+- **ALWAYS test each iteration before moving to the next - never proceed without verification**
 - Commit changes incrementally after each working step
-- Test iteratively - one feature at a time before moving to next
 - Break complex changes into small, testable steps
 - Update documentation before completing each iteration
 

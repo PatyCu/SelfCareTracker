@@ -60,9 +60,11 @@ Module.js           # Current code
 1. **Propose the plan** - For complex changes, share the approach and wait for approval
 2. **Plan the step** - Break complex features into small, testable increments
 3. **Implement** - Make the smallest change that adds value
-4. **Test** - Verify it works before moving on
+4. **Test** - **MUST verify it works before moving to next step**
 5. **Commit** - Save the working state to git
 6. **Repeat**
+
+**Critical Rule:** Never proceed to the next iteration without testing the current one. Each iteration must be verified as working before building on top of it.
 
 ### When Making Complex Changes
 
@@ -265,6 +267,35 @@ SelfCareTracker is a mobile app to track self-care habits across three main area
 - **Local-first approach:** Mobile app works offline, backend adds sync capability
 - **Module-based development:** Build one module at a time (Strength → Nutrition → Health)
 - **Simple is better:** Avoid over-engineering, start minimal and iterate
+
+## Development Roadmap
+
+### Phase 1: Bootstrap ✅
+- [x] Project structure
+- [x] Mobile app hello world
+- [x] Backend hello world
+- [x] Documentation
+
+### Phase 2: Strength Training (Next)
+- [ ] Data models
+- [ ] Weekly plan management
+- [ ] Training day view
+- [ ] Exercise logging
+
+### Phase 3: Backend Integration
+- [ ] API endpoints
+- [ ] Data sync
+- [ ] Offline support
+
+### Phase 4: Nutrition Module
+- [ ] Meal planning
+- [ ] Calorie tracking
+- [ ] Macro calculations
+
+### Phase 5: Health Module
+- [ ] Measurements tracking
+- [ ] Medications/supplements
+- [ ] Symptom logging
 
 ## Related Documents
 

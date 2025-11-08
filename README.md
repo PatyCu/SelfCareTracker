@@ -131,35 +131,6 @@ cd mobile && npm start
 - **CODE_PRINCIPLES.md** - Code quality standards and best practices
 - **.prompts/01-OUT-architecture_plan.md** - Detailed architecture decisions
 
-## 🗺 Roadmap
-
-### Phase 1: Bootstrap ✅
-- [x] Project structure
-- [x] Mobile app hello world
-- [x] Backend hello world
-- [x] Documentation
-
-### Phase 2: Strength Training (In Progress)
-- [ ] Data models
-- [ ] Weekly plan management
-- [ ] Training day view
-- [ ] Exercise logging
-
-### Phase 3: Backend Integration
-- [ ] API endpoints
-- [ ] Data sync
-- [ ] Offline support
-
-### Phase 4: Nutrition Module
-- [ ] Meal planning
-- [ ] Calorie tracking
-- [ ] Macro calculations
-
-### Phase 5: Health Module
-- [ ] Measurements tracking
-- [ ] Medications/supplements
-- [ ] Symptom logging
-
 ## 🤝 Contributing
 
 This is a personal project following specific development principles. See `CODE_PRINCIPLES.md` and `AGENTS.md` for guidelines.
