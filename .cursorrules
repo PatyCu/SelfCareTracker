@@ -38,6 +38,7 @@ Example: `feat: Add weekly plan management screen`
 - Be explicit about what operations do
 - Explain trade-offs when making architecture decisions
 - Ask for clarification when user intent is unclear
+- **For multi-task prompts:** Update prompt files with `[x]` as tasks complete
 
 ## Google Apps Script Specific
 - Split large files into focused modules (~100-200 lines max)

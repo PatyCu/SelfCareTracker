@@ -131,6 +131,22 @@ type: Brief description (50 chars max)
 - **AGENTS.md** - AI: project context, architecture, collaboration rules
 - **.cursorrules** - Cursor AI: enforced behavior rules
 
+**AGENTS.md vs .cursorrules - When to use which:**
+
+**.cursorrules** = "What to do NOW" (actionable, enforced)
+- Brief directives that must be followed immediately
+- Actionable rules without lengthy explanation
+- Examples: "Never commit untested code", "Update prompt files with [x] as tasks complete"
+- Think: enforcement layer
+
+**AGENTS.md** = "How we work together" (context, rationale)
+- Explains WHY and HOW with examples and context
+- Broader collaboration guidelines
+- Detailed explanations with trade-offs
+- Think: understanding layer
+
+**Rule:** If it's something that should be done automatically every time → .cursorrules. If it needs explanation and context → AGENTS.md. Often rules appear in both: brief in .cursorrules, detailed in AGENTS.md.
+
 **Before keeping any section, ask:**
 - Does this add enough value to justify maintaining it?
 - Does it duplicate data that already lives in the system?
