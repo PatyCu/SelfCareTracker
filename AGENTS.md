@@ -89,18 +89,34 @@ Once approved:
 
 **Intermediate commits** during an iteration should only happen when the user explicitly requests them (e.g., "let's commit this checkpoint").
 
+### What to Commit
+
+**Critical Rule: Only commit tested and working code.**
+
+- ✅ Documentation-only changes can be committed without testing
+- ✅ Code changes must be tested and verified working before committing
+- ❌ Never commit untested code "to test it later"
+- ❌ Never commit broken code "to fix it in the next commit"
+
+If tests fail, fix the code first, then commit.
+
 ### Commit Messages
 
 **Format:**
 ```
 type: Brief description (50 chars max)
-
-- Detailed point 1
-- Detailed point 2
-- Why this change matters
 ```
 
-**Types:** `feat`, `fix`, `refactor`, `docs`, `test`, `chore`
+**Rules:**
+- **One line only** - No body, no detailed explanations
+- **Imperative mood** - "Add feature" not "Added feature"
+- **No period** at the end
+- **Types:** `feat`, `fix`, `refactor`, `docs`, `test`, `chore`
+
+**Examples:**
+- `feat: Add weekly plan management screen`
+- `fix: Resolve training day date calculation bug`
+- `docs: Update setup instructions for backend`
 
 ---
 

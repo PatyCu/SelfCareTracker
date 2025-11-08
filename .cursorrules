@@ -20,16 +20,16 @@
 ### Commit Messages
 - **Style:** Conventional commits (feat:, fix:, chore:, refactor:, docs:, test:)
 - **Format:** `type: Brief description` (max 50 chars, imperative mood, no period)
-- **Body:** Add only if necessary for context or reasoning (keep brief)
+- **One line only** - No body, no detailed explanations
 - **Tone:** Factual and professional
-- **Avoid:** Redundancy, implementation details, post-commit explanations
 
-Example: `feat: Add automated scheduling and execution logging`
+Example: `feat: Add weekly plan management screen`
 
 ### Commit Workflow
 - **Always commit at the end of each iteration** (after docs updated and code cleaned)
+- **Only commit tested and working code** (documentation-only changes excepted)
 - Intermediate commits during iteration only at user request
-- Never commit broken/untested code
+- Test code changes before committing - never commit untested code
 - Use git history instead of commented code or "backup" files
 
 ## Communication
