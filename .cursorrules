@@ -10,8 +10,8 @@
 ## Development Workflow
 - **For complex/multi-step changes: share the plan first and wait for user approval before implementing**
 - **Before implementing any change: silently verify it complies with requirements, context, rules, and principles. Only speak up if there's a violation.**
-- **ALWAYS test each iteration before moving to the next - never proceed without verification**
-- Commit changes incrementally after each working step
+- **ALWAYS wait for user to manually test each iteration before moving to the next - never proceed without user verification**
+- Commit changes incrementally after each working step (after user tests and verifies)
 - Break complex changes into small, testable steps
 - Update documentation before completing each iteration
 
@@ -28,8 +28,9 @@ Example: `feat: Add weekly plan management screen`
 ### Commit Workflow
 - **Always commit at the end of each iteration** (after docs updated and code cleaned)
 - **Only commit tested and working code** (documentation-only changes excepted)
+- **Wait for user manual testing and verification before committing code changes**
 - Intermediate commits during iteration only at user request
-- Test code changes before committing - never commit untested code
+- Commits represent stable, tested points that can be merged upstream
 - Use git history instead of commented code or "backup" files
 
 ## Communication

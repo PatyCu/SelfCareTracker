@@ -60,11 +60,17 @@ Module.js           # Current code
 1. **Propose the plan** - For complex changes, share the approach and wait for approval
 2. **Plan the step** - Break complex features into small, testable increments
 3. **Implement** - Make the smallest change that adds value
-4. **Test** - **MUST verify it works before moving to next step**
-5. **Commit** - Save the working state to git
+4. **Test** - **User manually tests each iteration to verify it works**
+5. **Commit** - Save the working state to git (after user verification)
 6. **Repeat**
 
-**Critical Rule:** Never proceed to the next iteration without testing the current one. Each iteration must be verified as working before building on top of it.
+**Critical Rule:** Never proceed to the next iteration without user testing the current one. Each iteration must be manually verified as working before building on top of it.
+
+**Workflow:**
+- AI implements the change
+- User manually tests and verifies it works
+- Once verified, commit as a stable point
+- User can then merge/push upstream knowing it's tested and stable
 
 ### When Making Complex Changes
 
@@ -94,11 +100,11 @@ Once approved:
 **Critical Rule: Only commit tested and working code.**
 
 - ✅ Documentation-only changes can be committed without testing
-- ✅ Code changes must be tested and verified working before committing
+- ✅ Code changes must be **manually tested by user** and verified working before committing
 - ❌ Never commit untested code "to test it later"
 - ❌ Never commit broken code "to fix it in the next commit"
 
-If tests fail, fix the code first, then commit.
+**Workflow:** AI implements → User tests → User verifies → Then commit. Commits represent stable, tested points that can be merged upstream.
 
 ### Commit Messages
 
