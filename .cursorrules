@@ -1,0 +1,47 @@
+# Cursor AI Rules
+
+## Code Principles
+- Follow CODE_PRINCIPLES.md for all code decisions
+- Write self-documenting code (data over logic, explicit over derived)
+- **Remove legacy content immediately:** unused code, duplicate files, outdated documentation - never keep "for reference" (use git history)
+- Use descriptive names (GSheetMenu not Menu, fullPatternAnalysis not analyze)
+- Clean up debugging code after solving issues
+
+## Development Workflow
+- **For complex/multi-step changes: share the plan first and wait for user approval before implementing**
+- **Before implementing any change: silently verify it complies with requirements, context, rules, and principles. Only speak up if there's a violation.**
+- Commit changes incrementally after each working step
+- Test iteratively - one feature at a time before moving to next
+- Break complex changes into small, testable steps
+- Update documentation before completing each iteration
+
+## Git Practices
+
+### Commit Messages
+- **Style:** Conventional commits (feat:, fix:, chore:, refactor:, docs:, test:)
+- **Format:** `type: Brief description` (max 50 chars, imperative mood, no period)
+- **Body:** Add only if necessary for context or reasoning (keep brief)
+- **Tone:** Factual and professional
+- **Avoid:** Redundancy, implementation details, post-commit explanations
+
+Example: `feat: Add automated scheduling and execution logging`
+
+### Commit Workflow
+- **Always commit at the end of each iteration** (after docs updated and code cleaned)
+- Intermediate commits during iteration only at user request
+- Never commit broken/untested code
+- Use git history instead of commented code or "backup" files
+
+## Communication
+- **Answer concisely:** For simple yes/no questions, just answer "Yes" or "No" first
+- Use precise language (retrieve metadata, not "fetch files")
+- Be explicit about what operations do
+- Explain trade-offs when making architecture decisions
+- Ask for clarification when user intent is unclear
+
+## Google Apps Script Specific
+- Split large files into focused modules (~100-200 lines max)
+- Each module should have single, clear responsibility
+- Functions can call across files (shared global scope)
+- Keep API operations separate from data parsing and UI logic
+

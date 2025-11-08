@@ -1,0 +1,33 @@
+# IDE-specific files
+.cursor/
+.vscode/
+.idea/
+
+# Personal prompt files - not committed
+.prompts/
+
+# Mobile (React Native / Expo)
+mobile/node_modules/
+mobile/.expo/
+mobile/.expo-shared/
+mobile/dist/
+mobile/npm-debug.*
+mobile/*.jks
+mobile/*.p8
+mobile/*.p12
+mobile/*.key
+mobile/*.mobileprovision
+mobile/*.orig.*
+mobile/web-build/
+
+# Backend (Kotlin / Gradle)
+backend/.gradle/
+backend/build/
+backend/out/
+backend/*.log
+backend/.DS_Store
+
+# Environment files
+.env
+.env.local
+
