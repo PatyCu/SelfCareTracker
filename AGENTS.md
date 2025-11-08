@@ -190,6 +190,11 @@ For elaborate responses that are difficult to review in the IDE:
 - Detailed specifications
 - Multi-step implementation plans
 
+**Task Tracking:**
+- When a prompt file contains multiple tasks, mark them with `[ ]` / `[x]` checkboxes
+- Update the prompt file as tasks are completed
+- Helps track progress throughout the session
+
 **Why:** Easier to review, reference later, and keep context across sessions
 
 ### Explain Trade-offs
