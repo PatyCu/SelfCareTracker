@@ -1,4 +1,4 @@
-# Code Principles
+# Contribution Guidelines
 
 Core code quality principles for this project.
 

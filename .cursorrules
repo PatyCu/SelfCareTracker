@@ -1,7 +1,7 @@
 # Cursor AI Rules
 
 ## Code Principles
-- Follow CODE_PRINCIPLES.md for all code decisions
+- Follow CONTRIBUTING.md for all code decisions
 - Write self-documenting code (data over logic, explicit over derived)
 - **Remove legacy content immediately:** unused code, duplicate files, outdated documentation - never keep "for reference" (use git history)
 - Use descriptive names (GSheetMenu not Menu, fullPatternAnalysis not analyze)

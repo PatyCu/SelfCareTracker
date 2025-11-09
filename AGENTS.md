@@ -16,9 +16,9 @@ We build incrementally, commit frequently, and rely on version control instead o
 
 ## 📋 Code Principles
 
-### Follow CODE_PRINCIPLES.md
+### Follow CONTRIBUTING.md
 
-All code decisions should align with `CODE_PRINCIPLES.md`. Key principles include:
+All code decisions should align with `CONTRIBUTING.md`. Key principles include:
 
 1. **Clean Code** - Minimal, no cruft, descriptive names
 2. **Precise Language** - Say what you mean (retrieve not "fetch", calculate not "get")
@@ -145,7 +145,7 @@ type: Brief description (50 chars max)
 **Each document has one clear focus and audience:**
 - **README.md** - Developers: overview, structure, technologies, how to contribute
 - **SETUP.md** - Users: step-by-step setup instructions
-- **CODE_PRINCIPLES.md** - Contributors: code quality standards
+- **CONTRIBUTING.md** - Contributors: code quality standards and contribution guidelines
 - **AGENTS.md** - AI: project context, architecture, collaboration rules
 - **.cursorrules** - Cursor AI: enforced behavior rules
 
@@ -176,7 +176,7 @@ type: Brief description (50 chars max)
 
 - README.md - Current features, setup instructions
 - AGENTS.md - Update project-specific section as scope evolves
-- CODE_PRINCIPLES.md - Add learnings from the iteration
+- CONTRIBUTING.md - Add learnings from the iteration
 - Setup guides - Keep accurate
 
 ### Documentation Must Match Reality
@@ -459,7 +459,7 @@ Will evolve as needs emerge (iterative approach).
 
 ## Related Documents
 
-- `CODE_PRINCIPLES.md` - Core development principles
+- `CONTRIBUTING.md` - Code quality standards and contribution guidelines
 - `README.md` - Setup and running instructions
 - `API.md` - API endpoints and JSON schemas
 

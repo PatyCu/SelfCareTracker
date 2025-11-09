@@ -98,7 +98,7 @@ SelfCareTracker/
 │       └── sample-training-plan.json
 ├── API.md               # API documentation
 ├── AGENTS.md            # AI collaboration guide
-├── CODE_PRINCIPLES.md   # Code quality standards
+├── CONTRIBUTING.md      # Contribution guidelines
 └── README.md            # This file
 ```
 
@@ -106,11 +106,11 @@ SelfCareTracker/
 
 - **API.md** - API endpoints and JSON schemas
 - **AGENTS.md** - How AI agents collaborate on this project (includes detailed architecture decisions)
-- **CODE_PRINCIPLES.md** - Code quality standards and best practices
+- **CONTRIBUTING.md** - Code quality standards and contribution guidelines
 
 ## 🤝 Contributing
 
-This is a personal project following specific development principles. See `CODE_PRINCIPLES.md` and `AGENTS.md` for guidelines.
+This is a personal project following specific development principles. See `CONTRIBUTING.md` and `AGENTS.md` for guidelines.
 
 ## 📝 License
 
