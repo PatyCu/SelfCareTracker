@@ -436,23 +436,23 @@ Will evolve as needs emerge (iterative approach).
 - [x] Backend hello world
 - [x] Documentation
 
-### Phase 2: Strength Training (Next)
-- [ ] Data models
-- [ ] Weekly plan management
-- [ ] Training day view
-- [ ] Exercise logging
+### Phase 2: Strength Training (In Progress)
+- [x] Backend data models (TrainingPlan, TrainingDay, Exercise)
+- [x] Training plan API endpoint (`GET /api/v1/training-plan`)
+- [x] JSON data storage with sample training plan
+- [ ] Mobile app displays weekly training plan (ST01)
+- [ ] Mobile app displays training day details (ST02)
+- [ ] Exercise logging functionality (ST03)
+- [ ] Edit existing training plans (ST04)
+- [ ] Create new training plans (ST05)
+- [ ] Training plan history (ST06)
 
-### Phase 3: Backend Integration
-- [ ] API endpoints
-- [ ] Data sync
-- [ ] Offline support
-
-### Phase 4: Nutrition Module
+### Phase 3: Nutrition Module
 - [ ] Meal planning
 - [ ] Calorie tracking
 - [ ] Macro calculations
 
-### Phase 5: Health Module
+### Phase 4: Health Module
 - [ ] Measurements tracking
 - [ ] Medications/supplements
 - [ ] Symptom logging
