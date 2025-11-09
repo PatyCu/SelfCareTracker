@@ -72,6 +72,17 @@ Module.js           # Current code
 - Once verified, commit as a stable point
 - User can then merge/push upstream knowing it's tested and stable
 
+### Before User Testing - AI Self-Verification
+
+Before handing off for user testing, verify:
+- ✅ **Code compiles** - Run build/compile
+- ✅ **Data consistency** - Models match data files (JSON, schemas, etc.)
+- ✅ **Type alignment** - String fields have quoted values, numbers are numeric, etc.
+- ✅ **Mental trace** - Think through the actual runtime execution path
+- ✅ **Error-prone areas** - Serialization, API contracts, file I/O
+
+**Why:** User testing should verify functionality, not debug AI mistakes.
+
 ### When Making Complex Changes
 
 **IMPORTANT: For complex or multi-step changes, share the plan first and wait for user feedback/approval before implementing.**
@@ -118,6 +129,7 @@ type: Brief description (50 chars max)
 - **Imperative mood** - "Add feature" not "Added feature"
 - **No period** at the end
 - **Types:** `feat`, `fix`, `refactor`, `docs`, `test`, `chore`
+- **Review staged files** - Check what's being committed matches the message
 
 **Examples:**
 - `feat: Add weekly plan management screen`
@@ -235,6 +247,13 @@ If user intent is ambiguous:
 - Wait for confirmation before proceeding
 
 Don't guess or assume - **clarity over speed**.
+
+### Learning Moments - Update Ways of Working
+
+When we encounter situations that reveal gaps in our process:
+- **Prompt to update WoW** - "Should we add this to our ways of working?"
+- **Examples:** Bugs that could have been caught earlier, repeated mistakes, unclear processes
+- **Goal:** Continuously improve collaboration through documented learnings
 
 ---
 

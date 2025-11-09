@@ -10,6 +10,7 @@
 ## Development Workflow
 - **For complex/multi-step changes: share the plan first and wait for user approval before implementing**
 - **Before implementing any change: silently verify it complies with requirements, context, rules, and principles. Only speak up if there's a violation.**
+- **Before user testing: verify code compiles, data consistency, type alignment, and mentally trace execution path**
 - **ALWAYS wait for user to manually test each iteration before moving to the next - never proceed without user verification**
 - Commit changes incrementally after each working step (after user tests and verifies)
 - Break complex changes into small, testable steps
@@ -22,6 +23,7 @@
 - **Format:** `type: Brief description` (max 50 chars, imperative mood, no period)
 - **One line only** - No body, no detailed explanations
 - **Tone:** Factual and professional
+- **Review staged files** - Ensure commit message matches all files being committed
 
 Example: `feat: Add weekly plan management screen`
 
@@ -40,6 +42,7 @@ Example: `feat: Add weekly plan management screen`
 - Explain trade-offs when making architecture decisions
 - Ask for clarification when user intent is unclear
 - **For multi-task prompts:** Update prompt files with `[x]` as tasks complete
+- **After learning moments:** Prompt user to update ways of working (WoW)
 
 ## Google Apps Script Specific
 - Split large files into focused modules (~100-200 lines max)
