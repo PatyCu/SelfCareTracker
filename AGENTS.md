@@ -188,6 +188,35 @@ If the code changes, documentation must change too:
 
 **Why:** Prevents confusion and frustration when following guides.
 
+### README.md Specific Guidelines
+
+**Snapshot Principle:** README always reflects current state, never future plans or roadmap
+
+**Rules:**
+- ❌ **Never reference roadmap** - No "Current Status", "Building X next", "Future: Y"
+- ❌ **Never mention temporal phases** - No "current phase", "for now", "planned"
+- ✅ **Describe what exists** - If feature isn't built, don't mention it
+- ✅ **Update when things change** - When new features ship, add them then
+
+**Structure:**
+- **What It Does** - Only current functionality
+- **Architecture** - Technologies used (mobile + backend)
+- **Prerequisites** - What to install
+- **Installation** - One-time setup steps
+- **Running the App** - How to start services daily
+- **Project Structure** - Current folder layout
+- **Documentation** - Links to other docs
+
+**Content Principles:**
+- Keep sections focused (no redundancy between Installation/Running)
+- Be concise and technical
+- Group related content (tech stack + architecture together)
+- Show folder structure with current files
+
+**Example:**
+- ❌ Bad: "A mobile app to track strength training, nutrition, and health (nutrition coming soon)"
+- ✅ Good: "A mobile app to track strength training workouts"
+
 ---
 
 ## 💬 Communication Style
