@@ -330,6 +330,75 @@ SelfCareTracker is a mobile app to track self-care habits across three main area
 - **Module-based development:** Build one module at a time (Strength → Nutrition → Health)
 - **Simple is better:** Avoid over-engineering, start minimal and iterate
 
+## Architecture Decisions
+
+### Data Storage Strategy
+
+**Current Implementation:**
+- **Backend:** JSON file (`backend/src/main/resources/sample-training-plan.json`)
+- **Mobile:** AsyncStorage for local-first functionality
+- **Future:** PostgreSQL database with sync capability
+
+**Why JSON file first:**
+- ✅ Faster to implement and iterate
+- ✅ No database setup required yet
+- ✅ Easy to inspect and modify during development
+- ✅ Satisfies "simple is better" principle
+- ❌ Trade-off: Not scalable, will migrate to PostgreSQL later
+
+### API Design Decisions
+
+**REST over GraphQL:**
+- ✅ Simpler for this app's complexity
+- ✅ Well-understood, easier to debug
+- ✅ Standard HTTP tools work out of the box
+- ❌ Trade-off: Less flexible for complex queries (acceptable for now)
+
+**Endpoint structure: `/api/v1/...`**
+- ✅ Versioned from the start (easy to evolve API)
+- ✅ Clear separation from health check endpoint
+- ✅ RESTful resource naming
+
+### Data Model Decisions
+
+**`reps` as String type:**
+- **Problem:** Some exercises use numeric reps (8, 10, 12), others use "to failure"
+- **Solution:** String type to handle both cases
+- **Why not union type?** Kotlin serialization complexity; string is simpler and sufficient
+- **Validation:** Client-side responsibility to display appropriately
+
+**Highlighted exercises:**
+- **Stored twice:** Array of names (`highlightedExercises`) + boolean flag on each exercise (`isHighlighted`)
+- **Why redundant?** Allows quick filtering without iterating all exercises in UI
+- **Trade-off:** Slight data duplication for better UX performance
+
+**`dayOfWeek` as number (0-6):**
+- Follows JavaScript convention (0=Sunday)
+- Consistent with mobile Date API
+- Simple numeric comparison for sorting/filtering
+
+### Service Layer Pattern
+
+**Why `TrainingPlanService` exists:**
+- ✅ Separates data retrieval from routing logic
+- ✅ Makes testing easier (can mock service)
+- ✅ Single responsibility: service handles data, routes handle HTTP
+- ✅ Easier to swap JSON → database later without changing routes
+
+**Why not repository pattern?**
+- Too heavy for current complexity
+- Can refactor later when adding database
+
+### Error Handling Strategy
+
+**Current:** Basic Ktor error responses
+**Future considerations:**
+- Structured error responses with codes
+- Validation error details
+- Client-friendly error messages
+
+Will evolve as needs emerge (iterative approach).
+
 ## Development Roadmap
 
 ### Phase 1: Bootstrap ✅
@@ -363,7 +432,7 @@ SelfCareTracker is a mobile app to track self-care habits across three main area
 
 - `CODE_PRINCIPLES.md` - Core development principles
 - `README.md` - Setup and running instructions
-- `.prompts/01-OUT-architecture_plan.md` - Detailed architecture decisions
+- `API.md` - API endpoints and JSON schemas
 
 ---
 

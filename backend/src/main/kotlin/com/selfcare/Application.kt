@@ -1,5 +1,6 @@
 package com.selfcare
 
+import com.selfcare.services.TrainingPlanService
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
@@ -26,12 +27,19 @@ fun Application.configureRouting() {
         json()
     }
 
+    val trainingPlanService = TrainingPlanService()
+
     routing {
         get("/api/health") {
             call.respond(HealthResponse(
                 status = "ok",
                 service = "SelfCareTracker"
             ))
+        }
+
+        get("/api/v1/training-plan") {
+            val trainingPlan = trainingPlanService.retrieveTrainingPlan()
+            call.respond(trainingPlan)
         }
     }
 }

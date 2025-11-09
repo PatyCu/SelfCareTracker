@@ -1,30 +1,31 @@
 # SelfCareTracker
 
-A mobile app to track self-care habits including strength training, nutrition, and health metrics.
+A mobile app to track strength training workouts.
 
 ## 📱 What It Does
 
-SelfCareTracker helps you maintain healthy habits across three areas:
+SelfCareTracker helps you track strength training workouts:
 
-1. **Strength Training** - Track weekly workout plans, exercises, sets, and reps
-2. **Nutrition** - Manage meal plans with calorie and macro tracking
-3. **Health** - Monitor weight, body fat, medications, supplements, and daily symptoms
+- View weekly workout plans
+- See exercises for each training day
+- Track sets, reps, and rest times
 
-**Current Status:** Bootstrap complete. Building Strength Training module first.
+## 🏗 Architecture
 
-## 🛠 Technology Stack
+Mobile app consisting of two modules:
 
-### Mobile
+**Mobile Module:**
 - React Native with Expo
 - TypeScript
 - React Navigation
 - React Native Paper (UI)
 - AsyncStorage (local data)
 
-### Backend
+**Backend Module:**
 - Kotlin
 - Ktor (HTTP server)
-- PostgreSQL (planned)
+- JSON data storage
+- REST APIs
 
 ## 📋 Prerequisites
 
@@ -35,59 +36,44 @@ Before you begin, ensure you have installed:
 - **Java Development Kit (JDK)** 21 or higher
 - **Expo Go** app on your phone (iOS or Android) for testing
 
-## 🚀 Getting Started
+## 📦 Installation
 
-### Mobile App Setup
-
-1. Navigate to the mobile directory:
+**Mobile:**
 ```bash
 cd mobile
-```
-
-2. Install dependencies:
-```bash
 npm install
 ```
 
-3. Start the development server:
-```bash
-npm start
-```
-
-4. Run on your device:
-   - Scan the QR code with **Expo Go** (Android) or **Camera** app (iOS)
-   - Or press `a` for Android emulator
-   - Or press `i` for iOS simulator (macOS only)
-
-### Backend Setup
-
-1. Navigate to the backend directory:
+**Backend:**
 ```bash
 cd backend
-```
-
-2. Build the project:
-```bash
 ./gradlew build
 ```
 
-3. Run the server:
+## 🚀 Running the App
+
+**Start backend** (in one terminal):
 ```bash
-./gradlew run
+cd backend && ./gradlew run
 ```
 
-4. Verify it's running:
+Verify it's running:
 ```bash
 curl http://localhost:8080/api/health
+# Expected: {"status":"ok","service":"SelfCareTracker"}
 ```
 
-Expected response:
-```json
-{
-  "status": "ok",
-  "service": "SelfCareTracker"
-}
+**Start mobile app** (in another terminal):
+```bash
+cd mobile && npm start
 ```
+
+Then:
+- Scan QR code with **Expo Go** (Android) or **Camera** app (iOS)
+- Or press `a` for Android emulator
+- Or press `i` for iOS simulator (macOS only)
+
+Changes are reflected immediately via hot reload.
 
 ## 📁 Project Structure
 
@@ -102,34 +88,25 @@ SelfCareTracker/
 │   │   └── types/      # TypeScript definitions
 │   └── App.tsx
 ├── backend/             # Kotlin backend
-│   └── src/
-│       └── main/kotlin/
-│           └── com/selfcare/
-│               └── Application.kt
+│   ├── src/
+│   │   └── main/kotlin/
+│   │       └── com/selfcare/
+│   │           ├── models/        # Data models
+│   │           ├── services/      # Business logic
+│   │           └── Application.kt # Server setup
+│   └── resources/
+│       └── sample-training-plan.json
+├── API.md               # API documentation
 ├── AGENTS.md            # AI collaboration guide
 ├── CODE_PRINCIPLES.md   # Code quality standards
-└── README.md           # This file
+└── README.md            # This file
 ```
-
-## 🔧 Development Workflow
-
-1. **Start the backend:**
-```bash
-cd backend && ./gradlew run
-```
-
-2. **Start the mobile app** (in a new terminal):
-```bash
-cd mobile && npm start
-```
-
-3. **Make changes** and see them reflected immediately via hot reload
 
 ## 📖 Documentation
 
-- **AGENTS.md** - How AI agents collaborate on this project
+- **API.md** - API endpoints and JSON schemas
+- **AGENTS.md** - How AI agents collaborate on this project (includes detailed architecture decisions)
 - **CODE_PRINCIPLES.md** - Code quality standards and best practices
-- **.prompts/01-OUT-architecture_plan.md** - Detailed architecture decisions
 
 ## 🤝 Contributing
 

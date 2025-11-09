@@ -1,0 +1,174 @@
+{
+  "id": "plan-001",
+  "name": "4-Day Upper/Lower Split",
+  "daysPerWeek": 4,
+  "startDate": "2025-11-10",
+  "isActive": true,
+  "trainingDays": [
+    {
+      "id": "day-001",
+      "dayOfWeek": 1,
+      "workoutType": "upperbody",
+      "location": "gym",
+      "highlightedExercises": ["Bench Press"],
+      "exercises": [
+        {
+          "id": "ex-001",
+          "name": "Bench Press",
+          "sets": 4,
+          "reps": "8",
+          "restSeconds": 120,
+          "isHighlighted": true
+        },
+        {
+          "id": "ex-002",
+          "name": "Barbell Row",
+          "sets": 4,
+          "reps": "8",
+          "restSeconds": 120,
+          "isHighlighted": false
+        },
+        {
+          "id": "ex-003",
+          "name": "Overhead Press",
+          "sets": 3,
+          "reps": "10",
+          "restSeconds": 90,
+          "isHighlighted": false
+        },
+        {
+          "id": "ex-004",
+          "name": "Pull-ups",
+          "sets": 3,
+          "reps": "to failure",
+          "restSeconds": 90,
+          "isHighlighted": false
+        }
+      ]
+    },
+    {
+      "id": "day-002",
+      "dayOfWeek": 2,
+      "workoutType": "lowerbody",
+      "location": "gym",
+      "highlightedExercises": ["Barbell Squat", "Romanian Deadlift"],
+      "exercises": [
+        {
+          "id": "ex-005",
+          "name": "Barbell Squat",
+          "sets": 4,
+          "reps": "8",
+          "restSeconds": 180,
+          "isHighlighted": true
+        },
+        {
+          "id": "ex-006",
+          "name": "Romanian Deadlift",
+          "sets": 4,
+          "reps": "10",
+          "restSeconds": 120,
+          "isHighlighted": true
+        },
+        {
+          "id": "ex-007",
+          "name": "Leg Press",
+          "sets": 3,
+          "reps": "12",
+          "restSeconds": 90,
+          "isHighlighted": false
+        },
+        {
+          "id": "ex-008",
+          "name": "Leg Curl",
+          "sets": 3,
+          "reps": "12",
+          "restSeconds": 60,
+          "isHighlighted": false
+        }
+      ]
+    },
+    {
+      "id": "day-003",
+      "dayOfWeek": 4,
+      "workoutType": "push",
+      "location": "gym",
+      "highlightedExercises": ["Incline Bench Press"],
+      "exercises": [
+        {
+          "id": "ex-009",
+          "name": "Incline Bench Press",
+          "sets": 4,
+          "reps": "8",
+          "restSeconds": 120,
+          "isHighlighted": true
+        },
+        {
+          "id": "ex-010",
+          "name": "Dumbbell Shoulder Press",
+          "sets": 3,
+          "reps": "10",
+          "restSeconds": 90,
+          "isHighlighted": false
+        },
+        {
+          "id": "ex-011",
+          "name": "Tricep Dips",
+          "sets": 3,
+          "reps": "12",
+          "restSeconds": 60,
+          "isHighlighted": false
+        },
+        {
+          "id": "ex-012",
+          "name": "Lateral Raises",
+          "sets": 3,
+          "reps": "15",
+          "restSeconds": 60,
+          "isHighlighted": false
+        }
+      ]
+    },
+    {
+      "id": "day-004",
+      "dayOfWeek": 5,
+      "workoutType": "pull",
+      "location": "gym",
+      "highlightedExercises": ["Deadlift"],
+      "exercises": [
+        {
+          "id": "ex-013",
+          "name": "Deadlift",
+          "sets": 4,
+          "reps": "6",
+          "restSeconds": 180,
+          "isHighlighted": true
+        },
+        {
+          "id": "ex-014",
+          "name": "Pull-ups",
+          "sets": 4,
+          "reps": "8",
+          "restSeconds": 120,
+          "isHighlighted": false
+        },
+        {
+          "id": "ex-015",
+          "name": "Face Pulls",
+          "sets": 3,
+          "reps": "15",
+          "restSeconds": 60,
+          "isHighlighted": false
+        },
+        {
+          "id": "ex-016",
+          "name": "Bicep Curls",
+          "sets": 3,
+          "reps": "12",
+          "restSeconds": 60,
+          "isHighlighted": false
+        }
+      ]
+    }
+  ]
+}
+
